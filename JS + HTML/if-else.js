@@ -2,7 +2,7 @@ let nombre, edad
 
 nombre = prompt("Whats your name?")
 edad = prompt("Whats your age?")
-edad = parseInt(edad) // Convertir la edad a un número entero, para tratarlo como "Null"
+edad = parseInt(edad) // Convertir la edad a un número entero, para tratarlo como "Null" en caso de que el usuario no ingrese campo vacio.
 
 
 if (edad >= 18){
