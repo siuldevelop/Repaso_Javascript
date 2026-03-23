@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Colores de semaforo</h1>
+    <h4>El elemento select se utiliza para crear un menú desplegable en el que el usuario 
+        puede seleccionar una opción. Cada opción dentro del menú se define con el elemento 
+        option. El atributo value de cada opción se utiliza para almacenar un valor asociado 
+        a esa opción, que puede ser diferente del texto visible que se muestra al usuario.
+    </h4>
+
+    <div>
+        <p>
+            <select id="select1" name="select1" onchange="changeColor()">
+                <option value="Puede continuar">Verde</option>
+                <option value="Precaucion para detenerse">Amarillo</option>
+                <option value="Debe detenerse">Rojo</option>
+            </select>
+        </p>
+        <p>Indice seleccionado: <input type="text" id="text1" size="1"></p>
+        <p>Color seleccionado: <input type="text" id="text2" size="5"></p>
+        <p>Indicacion: <input type="text" id="text3"></p>
+
+        <script>
+            function changeColor() {
+                let seleccion = document.getElementById('select1')
+                document.getElementById('text1').value = seleccion.selectedIndex
+                document.getElementById('text2').value = seleccion[seleccion.selectedIndex].text
+                document.getElementById('text3').value = seleccion[seleccion.selectedIndex].value
+            }
+        </script>
+    </div>
+
+</body>
+</html>
