@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<body>
+    Ir a Wikipedia.com 
+    <input type="button" onclick="redirect()" value="Go">
+
+    <script>
+        function redirect(){
+            if(window.confirm('DESEA SALIR DE LA PAGINA?')){
+                window.location = 'https://wikipedia.com'
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>
