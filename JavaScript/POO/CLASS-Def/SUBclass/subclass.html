@@ -17,7 +17,14 @@
         class Futbolista extends Deportista{
             constructor(name, lastname, goals){
                 super(name, lastname)
-                this.goals = goals
+                this._goals = goals
+            }
+            get goals(){
+                return this._goals
+            }
+
+            set goals(newGoals){
+                this._goals = newGoals
             }
         }
     </script>
