@@ -35,3 +35,4 @@ function consult(){
      imagen.appendChild(photo)
     })
 }
+
